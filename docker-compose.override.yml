@@ -1,0 +1,14 @@
+services:
+  backend:
+    restart: "no"
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+    command: bash scripts/startup.sh --dev
+    volumes:
+      - ./src/:/app/src/
+      - ./tests/:/app/tests/
+
+  db:
+    restart: "no"
