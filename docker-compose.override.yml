@@ -3,12 +3,12 @@ services:
     restart: "no"
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: backend/Dockerfile
       target: dev
     command: bash scripts/startup.sh --dev
     volumes:
-      - ./src/:/app/src/
-      - ./tests/:/app/tests/
+      - ./backend/src/:/app/src/
+      - ./backend/tests/:/app/tests/
 
   db:
     restart: "no"

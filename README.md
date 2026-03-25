@@ -31,6 +31,12 @@ A simple backend template with a user system, jwt token management and email sen
     make dev
     ```
 
+3. Optional: install the backend dependencies
+    ```shell
+   cd /backend && \
+   uv sync 
+   ```
+
 The app will be launched on port `8000` and it's possible to view the API docs on `http://localhost:8000/docs`
 
 ### Useful commands

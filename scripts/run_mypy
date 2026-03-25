@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-uv run -- mypy --package src --namespace-packages
